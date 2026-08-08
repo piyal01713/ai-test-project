@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "users": {
+      "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+      "username": "TEXT UNIQUE NOT NULL",
+      "password": "TEXT NOT NULL"
+    },
+    "boards": {
+      "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+      "user_id": "INTEGER NOT NULL (FK -> users.id)",
+      "title": "TEXT NOT NULL"
+    },
+    "columns": {
+      "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+      "board_id": "INTEGER NOT NULL (FK -> boards.id)",
+      "title": "TEXT NOT NULL",
+      "position": "INTEGER NOT NULL"
+    },
+    "cards": {
+      "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+      "column_id": "INTEGER NOT NULL (FK -> columns.id)",
+      "title": "TEXT NOT NULL",
+      "description": "TEXT DEFAULT ''",
+      "position": "INTEGER NOT NULL"
+    }
+  }
+}
