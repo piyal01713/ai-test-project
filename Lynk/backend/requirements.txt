@@ -1,0 +1,12 @@
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-multipart>=0.0.6
+blake3>=0.3.3
+aiofiles>=23.2.1
+
+# testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.1
+httpx>=0.25.0

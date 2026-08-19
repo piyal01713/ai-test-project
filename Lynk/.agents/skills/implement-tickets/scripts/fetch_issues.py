@@ -20,7 +20,7 @@ def parse_owner_repo(url):
     return None, None
 
 def fetch_issues(owner, repo):
-    api_url = f"https://api.github.com/repos/{owner}/{repo}/issues?state=open"
+    api_url = f"https://api.github.com/repos/{owner}/{repo}/issues?labels=in-progress&state=open"
     headers = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/vnd.github.v3+json'}
     
     token = os.environ.get('GITHUB_TOKEN')
