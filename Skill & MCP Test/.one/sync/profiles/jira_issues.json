@@ -1,0 +1,18 @@
+{
+  "platform": "jira",
+  "model": "issues",
+  "connection": {
+    "platform": "jira"
+  },
+  "actionId": "conn_mod_def::GJ4qTteEFss::ghc4lftkS-yl0iJWEgCuHQ",
+  "resultsPath": "issues",
+  "idField": "id",
+  "pagination": {
+    "type": "FILL_IN (cursor | token | offset | id | link | none)",
+    "nextPath": "FILL_IN",
+    "passAs": "FILL_IN (query:name | body:name | header:name)"
+  },
+  "pathVars": {
+    "jiraCloudId": "FILL_IN"
+  }
+}
